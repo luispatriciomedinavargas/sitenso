@@ -3,10 +3,16 @@ module.exports = {
   async up(queryInterface, Sequelize) {
     await queryInterface.createTable('FavoriteMovies', {
       id: {
-        type: Sequelize.NUMBER
+        allowNull: false,
+        autoIncrement: true,
+        primaryKey: true,
+        type: Sequelize.INTEGER
       },
-      name: {
+      name_movie: {
         type: Sequelize.STRING
+      },
+      id_user:{
+      type:  Sequelize.NUMBER
       },
       createdAt: {
         allowNull: false,

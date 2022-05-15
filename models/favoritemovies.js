@@ -15,7 +15,8 @@ module.exports = (sequelize, DataTypes) => {
   }
   FavoriteMovies.init({
     id: DataTypes.NUMBER,
-    name: DataTypes.STRING
+    name_movie: DataTypes.STRING,
+    id_user:DataTypes.NUMBER
   }, {
     sequelize,
     modelName: 'FavoriteMovies',
