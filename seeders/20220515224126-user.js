@@ -3,16 +3,15 @@
 module.exports = {
   async up (queryInterface, Sequelize) {
     
-      await queryInterface.bulkInsert('User', [{
+      await queryInterface.bulkInsert('Users', [{
         email: 'correo@gmail.com',
-        password:12345,
-        isBetaMember: false
+        password:12345
       }], {});
   
   },
 
   async down (queryInterface, Sequelize) {
-      await queryInterface.bulkDelete('User', null, {});
+      await queryInterface.bulkDelete('Users', null, {});
      
   }
 };
