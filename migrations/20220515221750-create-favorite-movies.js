@@ -8,11 +8,11 @@ module.exports = {
         primaryKey: true,
         type: Sequelize.INTEGER
       },
-      name_movie: {
-        type: Sequelize.STRING
+      id_movie: {
+        type: Sequelize.INTEGER
       },
       id_user:{
-      type:  Sequelize.NUMBER
+      type:  Sequelize.INTEGER
       },
       createdAt: {
         allowNull: false,
